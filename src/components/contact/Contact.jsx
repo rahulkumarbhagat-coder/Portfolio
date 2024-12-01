@@ -76,7 +76,7 @@ const Contact = () => {
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
-          whileInView={{ opacity: 0, transition: { delay: 3, duration: 0.3 } }}
+          whileInView={{ opacity: 0, transition: { delay: 2, duration: 0.3 } }}
         >
           <svg
             style={{
@@ -111,7 +111,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           ref={formRef}
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, duration: 1.3, transition: { delay: 3 } }}
+          whileInView={{ opacity: 1, duration: 1.3, transition: { delay: 2 } }}
         >
           <input type="text" required placeholder="Name" name="name" />
           <input type="email" required placeholder="Email" name="email" />
