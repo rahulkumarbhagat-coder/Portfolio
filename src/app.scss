@@ -1,0 +1,59 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: #151525;
+    color:  #F2E9E4;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+
+@mixin mobile{
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (max-width: 1440px){
+        @content;
+    }
+}
+
+/* .course{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+    }
+} */
+
